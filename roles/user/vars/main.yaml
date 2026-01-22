@@ -1,0 +1,2 @@
+REDIS_HOST: "redis.prudhvi.shop"
+MONGODB_HOST: "mongodb.prudhvi.shop"
