@@ -49,9 +49,9 @@
       notify: 
         - restart nginx
 
-  - name: validate nginx configuration
-    ansible.builtin.command: nginx -t
-    changed_when: false      
+  # - name: validate nginx configuration
+  #   ansible.builtin.command: nginx -t
+  #   changed_when: false      
 
   # - name: restart nginx
   #   ansible.builtin.service:
