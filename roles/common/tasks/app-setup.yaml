@@ -1,5 +1,5 @@
 
-    - name: create user for {{component}}
+    - name: create user for {{{component}}}
       ansible.builtin.user:
         name: roboshop
         shell: /sbin/nologin
@@ -12,16 +12,16 @@
         state: directory
 
 
-    - name: download {component} code
+    - name: download {{component}} code
       ansible.builtin.get_url:
-        url: https://roboshop-artifacts.s3.amazonaws.com/{component}-v3.zip
+        url: https://roboshop-artifacts.s3.amazonaws.com/{{component}}-v3.zip
         dest: /tmp
 
     # - name: current directory
     #   ansible.builtin.command: cd /app    
 
-    - name: unzip the {component} code
+    - name: unzip the {{component}} code
       ansible.builtin.unarchive:
-        src: /tmp/{component}-v3.zip
+        src: /tmp/{{component}}-v3.zip
         dest: /app  
         remote_src: yes 
