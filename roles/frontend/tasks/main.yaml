@@ -46,13 +46,15 @@
     ansible.builtin.template:
       src: nginx.conf.j2
       dest: /etc/nginx/nginx.conf
+      notify: 
+        - restart nginx
 
   - name: validate nginx configuration
     ansible.builtin.command: nginx -t
     changed_when: false      
 
-  - name: restart nginx
-    ansible.builtin.service:
-      name: nginx
-      state: restarted
-      enabled: yes
+  # - name: restart nginx
+  #   ansible.builtin.service:
+  #     name: nginx
+  #     state: restarted
+  #     enabled: yes
