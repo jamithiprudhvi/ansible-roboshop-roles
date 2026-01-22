@@ -1,1 +1,5 @@
 CATALOGUE_HOST: "catalogue.prudhvi.shop"
+USER_HOST: "user.prudhvi.shop"
+CART_HOST: "cart.prudhvi.shop"
+SHIPPING_HOST: "shipping.prudhvi.shop"
+PAYMENT_HOST: "payment.prudhvi.shop"
