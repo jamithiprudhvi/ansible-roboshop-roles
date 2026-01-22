@@ -1,0 +1,3 @@
+CART_HOST: "cart.prudhvi.shop"
+USER_HOST: "user.prudhvi.shop"
+AMQP_HOST: "rabbitmq.prudhvi.shop"  
